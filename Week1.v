@@ -5,7 +5,7 @@ module Week1 (
     input wire [31:0] data_in,      // Data input
     input wire [4:0] rs1,           // Register select input 1 (5-bit, for 64 registers)
     input wire [4:0] rs2,           // Register select input 2 (5-bit, for 64 registers)
-    input wire [4:0] rd,            // Register select for data output (6-bit, for 64 registers)
+    input wire [4:0] rd,            // Register select for data output (5-bit, for 64 registers)
 
     output reg [31:0] data_rs1,     // Data output for rs1
     output reg [31:0] data_rs2      // Data output for rs2
