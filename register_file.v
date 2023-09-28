@@ -12,7 +12,7 @@ module register_file (
 );
 
 reg [31:0] reg_File [31:0];
-
+integer i;
 always @(posedge clock or posedge reset) begin
     if (reset) begin
         // Clear all registers on reset
