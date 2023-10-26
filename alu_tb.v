@@ -18,8 +18,8 @@ initial begin
     $dumpfile("alu_tb.vcd");
     $dumpvars(0, alu_tb);
 
-    operand1 = 10;
-    operand2 = 5;
+    operand1 = 50;
+    operand2 = 10;
 	 #10
 
     opcode = 4'b0001; //add
