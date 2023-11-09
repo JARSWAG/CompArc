@@ -1,6 +1,6 @@
 `timescale 1ps/1ps
 
-module rom_tb;
+module dmem_tb;
 
 reg [12:0] address;
 reg read_write;
@@ -9,7 +9,7 @@ reg clock;
 reg dataOut;
 
 DMEM_TopLevel uut (
-	 .data_in(data_in)
+	 .data_in(data_in),
     .address(address),
     .clock(clock),
     .read_write(read_write),
@@ -106,13 +106,13 @@ initial begin
 	 
 	 address[12:10] = 6;
 	 address[9:0] = 8;
-	 Din = 32'h1839uaHF;
+	 Din = 32'h1839UAHF;
 	 read_write = 1;
     #10;
 	 
 	 address[12:10] = 6;
 	 address[9:0] = 8;
-	 Din = 32'h1839uaHF;
+	 Din = 32'h1839UAHF;
 	 read_write = 0;
     #10;
 	 
