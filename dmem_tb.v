@@ -106,13 +106,13 @@ initial begin
 	 
 	 address[12:10] = 6;
 	 address[9:0] = 8;
-	 Din = 32'h1839UAHF;
+	 Din = 32'h18399137;
 	 read_write = 1;
     #10;
 	 
 	 address[12:10] = 6;
 	 address[9:0] = 8;
-	 Din = 32'h1839UAHF;
+	 Din = 32'h18399137;
 	 read_write = 0;
     #10;
 	 
