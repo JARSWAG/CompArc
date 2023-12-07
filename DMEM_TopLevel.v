@@ -6,6 +6,10 @@ module topLevelDMEM(
 
 wire [7:0] enable;
 
+initial begin
+	enable <= 8'b00000000;
+end
+	
 always @(posedge clk) begin
 	enable[address[12:10]] <= 1;
 	if (reset) begin
