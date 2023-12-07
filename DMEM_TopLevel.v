@@ -8,7 +8,7 @@ wire [7:0] enable;
 
 always @(posedge clk) begin
 	enable[address[12:10]] <= 1;
-	if reset begin
+	if (reset) begin
 		enable <= 8'b11111111;
 	end
 end
