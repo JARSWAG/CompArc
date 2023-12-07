@@ -1,7 +1,7 @@
 module DMEM(
 	input [31:0] data_in, input [9:0] address,
 	input clk, input read_write, input reset, input enable,
-	output [7:0] dataOut
+	output reg [7:0] dataOut
 );
 
 reg [7:0] storage [1023:0];
