@@ -15,11 +15,11 @@ initial begin
 end
 
 always @(posedge clk) begin
-	if reset begin
+	if (reset) begin
 		storage <= 1024'b0;
 	end
-	else begin
-		if read_write begin
+	else if (enable) begin
+		if (read_write) begin
 			storage[address] = data_in[7:0];
 			storage[address+1] = data_in[15:8];
 			storage[address+2] = data_in[23:16];
